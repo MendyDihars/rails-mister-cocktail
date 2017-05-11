@@ -27,6 +27,7 @@ class CocktailsController < ApplicationController
 
   def destroy
     @cocktail.destroy
+    redirect_to "/"
   end
 
   private
