@@ -11,7 +11,7 @@
           <div class="dose">
             <h3><%= Ingredient.find(c.ingredient_id).name %></h3>
             <p>- <%= c.description %></p>
-            <h4><%= link_to '☠', cocktail_dose_path(c), method: :delete, data: { confirm: 'Sure buddy?' }, class: 'suppr' %></h4>
+            <h4><%= link_to '☠', cocktail_dose_path(@cocktail, c), method: :delete, data: { confirm: 'Sure buddy?' }, class: 'suppr' %></h4>
           </div>
         </div>
       <% end %>
