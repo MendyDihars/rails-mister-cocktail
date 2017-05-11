@@ -3,7 +3,15 @@
 
 // components
 @import 'components/card-dose';
+@import 'components/cocktail';
 
 body {
   background: #eee;
+}
+a {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
 }

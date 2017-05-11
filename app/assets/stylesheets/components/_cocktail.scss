@@ -1,0 +1,14 @@
+.cocktail {
+  margin: 50px 0;
+  font-family: 'Raleway';
+  padding: 0 5px 5px 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background: white;
+}
+.link {
+  &:hover {
+    color: #decc09;
+    text-shadow: 0 0 10px #decc09;
+  }
+}
