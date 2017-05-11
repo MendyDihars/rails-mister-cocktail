@@ -18,6 +18,8 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'bootstrap-sass'
 
+gem 'simple_form'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end

@@ -1,0 +1,18 @@
+<h2><%= @cocktail.name %></h2>
+<%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+
+<div class="wrapper-dose">
+  <div class="container">
+    <div class="row">
+      <% @cocktail.doses.each do |c| %>
+        <div class="col-xs-6 col-md-3">
+          <div class="dose">
+            <h3><%= Ingredient.find(c.ingredient_id).name %></h3>
+            <p>- <%= c.description %></p>
+            <h4><%= link_to '☠', cocktail_dose_path(c), method: :delete, data: { confirm: 'Sure buddy?' } %></h4>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
