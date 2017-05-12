@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require cloudinary/jquery.cloudinary
+//= require jquery-fileupload/basic
+//= require attachinary
 //= require bootstrap-sprockets
 //= require_tree .
 
