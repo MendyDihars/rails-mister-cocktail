@@ -1,6 +1,6 @@
 class DosesController < ApplicationController
   before_action :find_cocktail, only: [:create, :new, :edit, :update, :destroy]
-  before_action :find_cocktail, only: [:edit, :update, :destroy]
+  before_action :find_dose, only: [:edit, :update, :destroy]
 
   def new
     @dose = @cocktail.doses.new
