@@ -4,8 +4,9 @@
       <% @cocktails.each do |cocktail| %>
         <div class="col-md-6">
           <div class="cocktail">
-            <h2><%= link_to "🍹", cocktail_path(cocktail), class: 'link' %> <%= cocktail.name %></h2>
+            <h2><%= link_to "🍹" + cocktail.name, cocktail_path(cocktail), class: 'link' %></h2>
             <p><%= link_to '❌', cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure to delete this great cocktail?" }, class: 'link' %></p>
+            <span class="edit-cocktail"><%= link_to 'Edit 🖊', edit_cocktail_path(cocktail) %></span>
           </div>
         </div>
       <% end %>

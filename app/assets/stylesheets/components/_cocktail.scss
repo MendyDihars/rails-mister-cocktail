@@ -1,26 +1,37 @@
 .cocktail {
   margin: 50px 0;
   font-family: 'Raleway';
-  padding: 10px;
-  border-top: 3px solid black;
-  background: #d35400;
-  // height: 50px;
+  border-top: 3px solid #397367;
+  background: #2c3e50;
+  color: white;
+  height: 150px;
   position: relative;
   h2 {
     position: absolute;
-    top: 10;
     left: 10px;
+    margin: 0;
+    padding: 0;
   }
   p {
     position: absolute;
-    bottom: 10px;
     right: 10px;
+    margin: 0;
+    margin: 0;
+  }
+  .edit-cocktail {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-size: 20px;
+    &:hover {
+      text-shadow: 0 0 10px white;
+    }
   }
 }
 .link {
   font-size: 30px;
   &:hover {
-    color: #decc09;
-    text-shadow: 0 0 10px #decc09;
+    color: white;
+    text-shadow: 0 0 10px white;
   }
 }
