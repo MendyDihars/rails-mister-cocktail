@@ -1,9 +1,12 @@
 // bootstrap
 @import 'bootstrap';
+@import 'font-awesome';
 
 // components
 @import 'components/card-dose';
 @import 'components/cocktail';
+@import 'components/navbar';
+@import 'components/footer';
 
 body {
   background: #D0F4EA;
@@ -13,5 +16,10 @@ a {
   &:hover {
     text-decoration: none;
     color: inherit;
+  }
+}
+ul {
+  li {
+    list-style: none;
   }
 }

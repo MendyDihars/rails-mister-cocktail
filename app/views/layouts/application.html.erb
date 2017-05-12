@@ -4,6 +4,7 @@
     <title>RailsMisterCocktail</title>
     <%= csrf_meta_tags %>
 
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -11,8 +12,8 @@
   </head>
 
   <body>
-    <h1 class="text-center"><%= link_to "Mister Cocktail", "/" %></h1>
+    <%= render 'layouts/navbar' %>
     <%= yield %>
-    <h2 class="text-center"><%= link_to 'Add Cocktail', new_cocktail_path, class: 'btn btn-info' %></h2>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

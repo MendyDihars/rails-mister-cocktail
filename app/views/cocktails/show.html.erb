@@ -1,7 +1,8 @@
 <div class="header text-center">
   <h2><%= @cocktail.name %></h2>
-  <div class="marged"><%= cl_image_tag @cocktail.photo.path, height: 200, width: 150, crop: :fill if @cocktail.photo? %></div>
+  <div class="marged"><%= cl_image_tag @cocktail.photo.path, class: 'picture-show' if @cocktail.photo? %></div>
   <%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+
 </div>
 
 <div class="wrapper-dose">

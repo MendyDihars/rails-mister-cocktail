@@ -20,6 +20,7 @@ gem 'jquery-fileupload-rails'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'bootstrap-sass'
+gem "font-awesome-rails"
 
 gem 'figaro'
 gem 'simple_form'

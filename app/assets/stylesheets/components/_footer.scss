@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #353636;
+  color: white;
+  li {
+    padding: 10px 0;
+    transition: font-size 0.3s ease;
+    &:hover {
+      font-size: 1.5vw;
+    }
+  }
+  .message {
+    padding: 10px;
+    a:hover {
+      text-shadow: 0 0 10px white;
+    }
+  }
+}
+ul:first-child {
+  padding-left: 30px;
+}
